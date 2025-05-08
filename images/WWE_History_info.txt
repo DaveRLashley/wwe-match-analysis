@@ -1,8 +1,0 @@
-Author Name
-
-Waqar Ali
-Bio
-
-Aspiring Data Scientist | Kaggle Competitor | Python & R Enthusiast
-
-https://www.kaggle.com/datasets/waqi786/wwe-champion-dataset/data
