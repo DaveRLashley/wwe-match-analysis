@@ -39,15 +39,19 @@ This project aimed to analyze match outcomes from WWE Premium Live Events using 
      - Validate assumptions
      - Communicate limitations
 
-## 📈 Key Insights
+## 🔍 Key Insights
 
-- Some wrestlers appear frequently in winning or losing roles.
-- Title matches occur in roughly X% of events.
-- Certain events consistently host more matches than others.
+- Data without context (like timeframes or unique match IDs) is hard to verify.
+- Balanced match outcomes may be artificially generated.
+- Even flawed data is valuable for teaching cleanup, validation, and skepticism.
 
-## 🖼️ Visuals
+## 📸 Visuals / Screenshots
 
-- Top 10 Match Winners
-- Top 10 Match Losers
-- Title Match Frequency
-- Most Active Events
+Add plots or screenshots of your R output here (e.g., bar charts of win/loss counts).
+
+---
+
+## 🚀 Future Work
+
+- Find or construct a more detailed WWE dataset with verifiable match IDs and accurate timestamps.
+- Use APIs or scrapers (like Cagematch or WrestlingData) to build a fresh dataset.
