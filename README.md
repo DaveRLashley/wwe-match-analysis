@@ -46,8 +46,7 @@ This project aimed to analyze match outcomes from WWE Premium Live Events using 
 - Even flawed data is valuable for teaching cleanup, validation, and skepticism.
 
 ## 📸 Visuals / Screenshots
-
-Add plots or screenshots of your R output here (e.g., bar charts of win/loss counts).
+![Folder](./images)
 
 ---
 
