@@ -1,9 +1,13 @@
 # wwe-match-analysis (Critical Data Review)
-An analysis of 1000 WWE PLE match outcomes.
+This project explores the outcomes of 1,000 WWE Premium Live Event (PLE) matches with the goal of identifying trends in wins, losses, title matches, and event frequency.
 
-## 🧠 Problem Statement
+## 🔍 Objective
 
-This project aimed to analyze match outcomes from WWE Premium Live Events using a dataset of 1,000 match records. However, during analysis, data quality issues were discovered that significantly impacted insights and accuracy.
+The original aim was to analyze match history and uncover meaningful patterns. However, during the course of the analysis, significant data quality issues emerged — including improbable distributions and inconsistencies — which affected the reliability of insights.
+
+## 💡 Outcome
+
+Instead of abandoning the project, the analysis pivots to showcase how to identify and document flawed or synthetic data. This serves as both a technical exercise and a demonstration of responsible data interpretation.
 
 ## 📊 Dataset Source
 
