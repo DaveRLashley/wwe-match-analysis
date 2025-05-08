@@ -1,11 +1,9 @@
-# wwe-match-analysis
+# wwe-match-analysis (Critical Data Review)
 An analysis of 1000 WWE PLE match outcomes.
 
-# WWE Match Outcome Analysis
+## 🧠 Problem Statement
 
-## 📌 Problem Statement
-
-This project analyzes WWE match outcomes across 1000 recorded pay-per-view (PLE) matches to uncover which superstars dominate, how often titles are defended, and which events feature the most matches.
+This project aimed to analyze match outcomes from WWE Premium Live Events using a dataset of 1,000 match records. However, during analysis, data quality issues were discovered that significantly impacted insights and accuracy.
 
 ## 📊 Dataset Source
 
@@ -14,18 +12,32 @@ This project analyzes WWE match outcomes across 1000 recorded pay-per-view (PLE)
 
 ## 🛠️ Tools Used
 
-- R
+- R + dplyr
 - tidyverse (for data wrangling)
 - ggplot2 (for visualization)
 - janitor (for cleaning column names)
+- CSV export for result sharing
 
 ## 🔍 Step-by-Step Analysis
 
-1. Loaded and cleaned the dataset.
-2. Identified top winners and top losers.
-3. Calculated the frequency of title matches.
-4. Compared match volume across events.
-5. Visualized key findings using bar charts.
+1. **Data Load & Inspection**
+   - Identified columns: Match ID, Date, Event, Winner, Loser, Title Match.
+   - Discovered that `Date` and `Match ID` were unreliable and likely synthetic or improperly structured.
+
+2. **Top 10 Winners & Losers**
+   - Counted occurrences of each wrestler as winner/loser.
+   - Found identical win/loss counts for many — including unusual cases like 20 wins and 0 losses.
+
+3. **Win vs Loss Summary**
+   - Merged winner/loser counts to calculate net wins.
+   - Found the dataset lacks realism — symmetrical booking, unbalanced appearances, etc.
+
+4. **Conclusion**
+   - The dataset is statistically flawed or overly synthetic, limiting reliable insights.
+   - Despite this, the process showed how to:
+     - Investigate data inconsistencies
+     - Validate assumptions
+     - Communicate limitations
 
 ## 📈 Key Insights
 
