@@ -60,7 +60,7 @@ These patterns strongly indicated that the dataset was synthetic or fabricated, 
 - Even flawed data is valuable for teaching cleanup, validation, and skepticism.
 
 ## 📸 Visuals / Screenshots
-![Link to](./images)
+![Link to images](./images)
 
 ---
 
