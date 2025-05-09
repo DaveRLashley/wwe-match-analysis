@@ -14,6 +14,16 @@ Instead of abandoning the project, the analysis pivots to showcase how to identi
 - Dataset: `WWE_History_1000.csv`
 - Source: [Kaggle](https://www.kaggle.com/datasets/waqi786/wwe-champion-dataset/data)
 
+### 🔎 How Issues Were Discovered
+
+Suspicions about the dataset’s reliability arose during exploratory analysis when:
+
+- **Unrealistic Event Frequency** – As many as five major PLEs were listed within a single month, which is not logistically possible.
+- **Duplicate Annual Events** – PLEs that occur only once a year appeared multiple times in the same calendar year.
+- **Nonexistent Matchups** – Several matches were logged between wrestlers who have never competed against each other at their listed PLE.
+
+These patterns strongly indicated that the dataset was synthetic or fabricated, prompting a shift in project focus.
+
 ## 🛠️ Tools Used
 
 - R + dplyr
@@ -50,7 +60,7 @@ Instead of abandoning the project, the analysis pivots to showcase how to identi
 - Even flawed data is valuable for teaching cleanup, validation, and skepticism.
 
 ## 📸 Visuals / Screenshots
-![Folder](./images)
+![Link to](./images)
 
 ---
 
