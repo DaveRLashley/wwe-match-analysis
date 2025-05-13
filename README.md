@@ -60,7 +60,10 @@ These patterns strongly indicated that the dataset was synthetic or fabricated, 
 - Even flawed data is valuable for teaching cleanup, validation, and skepticism.
 
 ## 📸 Visuals / Screenshots
-![Link to images](./images)
+
+The visuals in this project revealed unnatural symmetry in the dataset, which led to the critical review pivot.  
+Rather than showcasing typical dashboards, this folder highlights the visual evidence of potential data fabrication.
+![View Screenshots Folder](./images)
 
 ---
 
