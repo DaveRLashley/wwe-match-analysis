@@ -30,7 +30,7 @@ Key red flags that pointed to synthetic or fabricated data included:
 The charts created from this data did not reflect reality. Instead, they revealed the dataset's flaws, such as the unnaturally symmetrical win/loss records shown below. This visual was the key piece of evidence that confirmed the data was unreliable.
 
 ![Unnatural Win/Loss Ratios](./images/top_winners.png)
-![Unnatural Win/Loss Ratios](./images/top_winners.png)
+![Unnatural Win/Loss Ratios](./images/top_losers.png)
 
 
 ---
