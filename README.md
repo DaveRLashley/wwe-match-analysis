@@ -1,74 +1,51 @@
-# wwe-match-analysis (Critical Data Review)
-This project explores the outcomes of 1,000 WWE Premium Live Event (PLE) matches with the goal of identifying trends in wins, losses, title matches, and event frequency.
+# WWE Match Analysis: A Case Study in Data Validation 🕵️‍♂️
 
-## 🔍 Objective
-
-The original aim was to analyze match history and uncover meaningful patterns. However, during the course of the analysis, significant data quality issues emerged — including improbable distributions and inconsistencies — which affected the reliability of insights.
-
-## 💡 Outcome
-
-Instead of abandoning the project, the analysis pivots to showcase how to identify and document flawed or synthetic data. This serves as both a technical exercise and a demonstration of responsible data interpretation.
-
-## 📊 Dataset Source
-
-- Dataset: `WWE_History_1000.csv`
-- Source: [Kaggle](https://www.kaggle.com/datasets/waqi786/wwe-champion-dataset/data)
-
-### 🔎 How Issues Were Discovered
-
-Suspicions about the dataset’s reliability arose during exploratory analysis when:
-
-- **Unrealistic Event Frequency** – As many as five major PLEs were listed within a single month, which is not logistically possible.
-- **Duplicate Annual Events** – PLEs that occur only once a year appeared multiple times in the same calendar year.
-- **Nonexistent Matchups** – Several matches were logged between wrestlers who have never competed against each other at their listed PLE.
-
-These patterns strongly indicated that the dataset was synthetic or fabricated, prompting a shift in project focus.
-
-## 🛠️ Tools Used
-
-- R + dplyr
-- tidyverse (for data wrangling)
-- ggplot2 (for visualization)
-- janitor (for cleaning column names)
-- CSV export for result sharing
-
-## 🔍 Step-by-Step Analysis
-
-1. **Data Load & Inspection**
-   - Identified columns: Match ID, Date, Event, Winner, Loser, Title Match.
-   - Discovered that `Date` and `Match ID` were unreliable and likely synthetic or improperly structured.
-
-2. **Top 10 Winners & Losers**
-   - Counted occurrences of each wrestler as winner/loser.
-   - Found identical win/loss counts for many — including unusual cases like 20 wins and 0 losses.
-
-3. **Win vs Loss Summary**
-   - Merged winner/loser counts to calculate net wins.
-   - Found the dataset lacks realism — symmetrical booking, unbalanced appearances, etc.
-
-4. **Conclusion**
-   - The dataset is statistically flawed or overly synthetic, limiting reliable insights.
-   - Despite this, the process showed how to:
-     - Investigate data inconsistencies
-     - Validate assumptions
-     - Communicate limitations
-
-## 🔍 Key Insights
-
-- Data without context (like timeframes or unique match IDs) is hard to verify.
-- Balanced match outcomes may be artificially generated.
-- Even flawed data is valuable for teaching cleanup, validation, and skepticism.
-
-## 📸 Visuals / Screenshots
-
-The visuals in this project revealed unnatural symmetry in the dataset, which led to the critical review pivot.  
-Rather than showcasing typical dashboards, this folder highlights the visual evidence of potential data fabrication.
-
-![View Screenshots Folder](./images)
+This project began as an analysis of 1,000 WWE matches to uncover trends but pivoted into a critical review of data quality. It demonstrates the process of identifying, documenting, and drawing conclusions from a flawed or likely synthetic dataset.
 
 ---
 
-## 🚀 Future Work
+### The Objective
 
-- Find or construct a more detailed WWE dataset with verifiable match IDs and accurate timestamps.
-- Use APIs or scrapers (like Cagematch or WrestlingData) to build a fresh dataset.
+The initial goal was to analyze a dataset of 1,000 WWE Premium Live Event (PLE) matches from Kaggle to identify patterns in wins, losses, title defenses, and event frequency.
+
+---
+
+### The Discovery: A Pivot to Critical Review
+
+During exploratory data analysis, I uncovered significant and repeated anomalies that called the integrity of the entire dataset into question. The patterns discovered were not consistent with the real-world logistics and booking of WWE events.
+
+This discovery prompted a pivot: the project's new focus became to document these data quality issues and showcase the importance of skepticism and data validation before drawing conclusions.
+
+#### Evidence of Flawed Data
+
+Key red flags that pointed to synthetic or fabricated data included:
+* **❗ Unrealistic Event Frequency:** The dataset listed as many as five major PLEs within a single month, a logistical impossibility.
+* **❗ Duplicate Annual Events:** Marquee events that occur only once per year (like WrestleMania or the Royal Rumble) were listed multiple times within the same calendar year.
+* **❗ Nonexistent Matchups:** The data contained records of matches that have never taken place at the listed event.
+
+---
+
+### Featured Visualization: The "Broken" Chart
+
+The charts created from this data did not reflect reality. Instead, they revealed the dataset's flaws, such as the unnaturally symmetrical win/loss records shown below. This visual was the key piece of evidence that confirmed the data was unreliable.
+
+*To add your main chart here, place the image file (e.g., `symmetrical-wins-chart.png`) inside your `images` folder and make sure the filename below matches it exactly.*
+
+![Unnatural Win/Loss Ratios](./images/your-most-revealing-chart.png)
+
+---
+
+### The Outcome: The Value of Skepticism
+
+While the dataset could not be used to generate reliable insights about WWE booking, the project successfully demonstrates a more critical real-world skill:
+- How to rigorously investigate data for inconsistencies.
+- The importance of validating assumptions with domain knowledge.
+- How to clearly communicate the limitations of a dataset.
+
+---
+
+### 🛠️ Tools & Technology
+
+* **Data Wrangling & Analysis:** R (using `tidyverse` and `dplyr`)
+* **Data Cleaning:** `janitor`
+* **Visualization:** `ggplot2`
