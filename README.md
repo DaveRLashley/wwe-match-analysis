@@ -8,6 +8,9 @@ This project began as an analysis of 1,000 WWE matches to uncover trends but piv
 
 The initial goal was to analyze a dataset of 1,000 WWE Premium Live Event (PLE) matches from Kaggle to identify patterns in wins, losses, title defenses, and event frequency.
 
+* **Dataset:** `WWE_History_1000.csv`
+* **Source:** [Kaggle](https://www.kaggle.com/datasets/waqi786/wwe-champion-dataset/data)
+
 ---
 
 ### The Discovery: A Pivot to Critical Review
@@ -49,3 +52,4 @@ While the dataset could not be used to generate reliable insights about WWE book
 * **Data Wrangling & Analysis:** R (using `tidyverse` and `dplyr`)
 * **Data Cleaning:** `janitor`
 * **Visualization:** `ggplot2`
+* ** 
